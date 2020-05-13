@@ -1,0 +1,28 @@
+From selenium import web driver
+import time
+
+name = David Nguyen
+email = david@gmail.com
+tele = 102312313123
+apt_number = 1
+zip = 98070
+city = Seattle
+State =  WA
+Country = USA
+
+Number = 1111 1111 1111 1111
+Expiration _month = 08
+Expiration_year =2024
+cvv = 123
+
+# Website
+Chromedriver_Location = "Chromedriver.exe"
+Driver = webdriver.chrome(Chromedriver_Location)
+
+#add item to cart
+Driver.get(https://www.supremenewyork.com/shop/accessories/nq5hkuef2/mt26hz7la)
+add_to_cart_button = '//[@id='add-remove-buttons']/input
+driver.find_element_by_xpath(addd_to_cart_button).click()
+
+# Delay Execution
+time.sleep(2)
